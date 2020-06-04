@@ -41,8 +41,8 @@ class ClipDrawableProcessorTask<T>(imageView: ImageView, seekBar: SeekBar, priva
                 theBitmap = (args[0] as BitmapDrawable).bitmap
             }
             // val tmpBitmap = getScaledBitmap(theBitmap)
-            if (tmpBitmap != null)
-                theBitmap = tmpBitmap
+            // if (tmpBitmap != null)
+                // theBitmap = tmpBitmap
 
             val bitmapDrawable = BitmapDrawable(context.resources, theBitmap)
             return ClipDrawable(bitmapDrawable, Gravity.LEFT, ClipDrawable.HORIZONTAL)
